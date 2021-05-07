@@ -20,7 +20,7 @@ function exportEvents() {
       // do nothing - we are just checking for a duplicate
     }
     if (!event) {
-      // Creates an all-day event for the Woodstock festival (August 15th to 17th) and logs the ID.
+      // Creates an all-day event and logs the ID.
         var newEvent = cal.createAllDayEvent(title, new Date(date), {guests: guest, sendInvites: true}).getId();
       // Logger.log('Event ID: ' + event.getId());
       row[6] = newEvent; // update the data array with the event ID
